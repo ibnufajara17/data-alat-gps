@@ -1,0 +1,124 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	width: 98s%;  
+	min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;  
+	background-image:url('../images/background.jpg');
+}
+.container-login{
+	position: absolute;
+	top: 50%;
+	left: 28%;
+	transform: translate(-50%,-50%);
+	width: 720px;
+	height: 400px;
+	background: #B0E0E6;
+	opacity: 0.88;
+	border-radius: 10px;
+}
+.container-login .form_content,
+.container-login .login_form
+{
+	position: relative;
+	width: 50%;
+	height: 400px;
+	float:left;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.container-login .form_content
+{
+	padding: 40px 30px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+h2
+{
+	font-family: Verdana;
+	font-size: 28px;
+	font-stretch: ultra-expanded;
+	vertical-align: text-center;
+	position: relative;
+	margin-top:115px;
+	color: black;
+}
+.container-login .login_form
+{
+	background: #F0FFF0;
+	height: 430px;
+	top: -18px;
+	box-shadow: -20px 0 15px rgba(0,0,0,.2);
+	padding: 30px;
+	text-align: center;
+}
+.container-login .login_form h1
+{
+	font-family: Comic sans Ms;
+	font-size: 23px;
+	text-align: center;
+	color :#0000FF;
+}
+.container-login .login_form input
+{
+	display: block;
+	width:90%;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	margin-top: 25px;
+	border: 2px solid #6495ED;
+	border-radius: 10px;
+	outline: none;
+	font-size: 15px;
+	
+}
+.container-login .login_form input:hover,
+.container-login .login_form input:valid
+{
+	/*border: 2px solid #00008B;*/
+}
+.container-login .login_form input[type="submit"]
+{
+	/*color: #fff;
+	background:#673ab7;*/
+	position:absolute;
+   bottom:35px;
+   width:75%;
+   height:60px;
+   border:none;
+   background:$btncolor;
+   font-family: 'Open Sans', sans-serif;
+   text-align:center;
+   font-size:18pt;
+   text-transform:capitalize;
+   color:#fff;
+   z-index:3;
+   @include prefix(border-radius,4px);
+   @include prefix(transition, .3s);
+  &:hover,
+  &:focus,
+  &:active:focus{ 
+    background:#e91e63;
+    cursor:pointer;
+    outline:none;
+    letter-spacing:5px;
+}
